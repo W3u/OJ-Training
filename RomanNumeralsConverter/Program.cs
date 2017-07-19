@@ -12,22 +12,46 @@ namespace RomanNumeralsConverter
 		{
 			ConsoleConversionTable();
 
-			Console.WriteLine("please enter a number(0<number<4000):");
+			Console.WriteLine("Option 1: Convert Roman numeral to Decimal number(VII -> 7).");
+			Console.WriteLine("Option 2: Convert Decimal numeral to Roman number(7 -> VII).");
+			Console.WriteLine("Please choose a number(1 or 2):");
 
-			string input = Console.ReadLine();
-			while (string.IsNullOrEmpty(input) == false)
+			string inputOption = Console.ReadLine();
+			while (string.IsNullOrEmpty(inputOption) == false)
 			{
-				RomanConverter romanConverter = new RomanConverter();
-				try
+				int option;
+				if (int.TryParse(inputOption, out option) == false || !(option == 1 || option == 2))
 				{
-					string output = romanConverter.ToRomanNumber(input);
-					Console.WriteLine(output);
+					Console.WriteLine("Error: invalid input,please choose a number(1 or 2):");
 				}
-				catch (Exception ex)
+				else
 				{
-					Console.WriteLine(ex.Message);
+					RomanConverterV2 romanConverter = new RomanConverterV2();
+					try
+					{
+						string inputNumber = string.Empty;
+						string output = string.Empty;
+						if (option == 1)
+						{
+							Console.WriteLine("Please enter a Roman numeral(0<roman number's value<4000):");
+							inputNumber = Console.ReadLine();
+							output = romanConverter.ToDecimalNumber(inputNumber);
+						}
+						else if (option == 2)
+						{
+							Console.WriteLine("Please enter a Decimal number(0<decimal number's value<4000):");
+							inputNumber = Console.ReadLine();
+							output = romanConverter.ToRomanNumber(inputNumber);
+						}
+						Console.WriteLine($"{inputNumber} --> {output}");
+					}
+					catch (Exception ex)
+					{
+						Console.WriteLine("Error: " + ex.Message);
+					}
 				}
-				input = Console.ReadLine();
+				Console.WriteLine("Please choose a number(1 or 2):");
+				inputOption = Console.ReadLine();
 			}
 
 			Console.ReadKey();

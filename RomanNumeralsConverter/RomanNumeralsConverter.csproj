@@ -46,7 +46,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanConverter.cs" />
-    <Compile Include="RomanNnumerals.cs" />
+    <Compile Include="RomanConverterV2.cs" />
+    <Compile Include="RomanNumeral.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
