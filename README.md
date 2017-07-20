@@ -7,6 +7,9 @@
 1. convert roman number to decimal number.
 2. convert decima number to roman number.
 
+## 2.Amount in words:
 
+**DESCRIPTION:** 
+1. convert dollars and cents to words.
 
 
