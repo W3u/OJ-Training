@@ -8,8 +8,6 @@ for example：
 ->
  one hundred twenty-two thousand, two hundred thirty-three dollars   and   forty-four  cents
 
---
-
 102030.15
 ->
  one hundred two thousand, thirty dollars   and   fifteen  cents
