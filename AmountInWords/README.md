@@ -3,6 +3,7 @@
 ## Description:
 Convert a amount(dollar and cents) to equivalently words.
 for example：
+
 1222
 ->
  one hundred twenty-two thousand, two hundred thirty-three dollars   and   forty-four  cents
@@ -15,6 +16,7 @@ for example：
 
 
 Arabic Word
+
 1 	one	
 2	two
 3	three
