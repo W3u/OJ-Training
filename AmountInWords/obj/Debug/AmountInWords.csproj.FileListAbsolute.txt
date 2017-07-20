@@ -1,0 +1,6 @@
+D:\GitRepository\OJ-Training\AmountInWords\bin\Debug\AmountInWords.exe.config
+D:\GitRepository\OJ-Training\AmountInWords\bin\Debug\AmountInWords.exe
+D:\GitRepository\OJ-Training\AmountInWords\bin\Debug\AmountInWords.pdb
+D:\GitRepository\OJ-Training\AmountInWords\obj\Debug\AmountInWords.csprojResolveAssemblyReference.cache
+D:\GitRepository\OJ-Training\AmountInWords\obj\Debug\AmountInWords.exe
+D:\GitRepository\OJ-Training\AmountInWords\obj\Debug\AmountInWords.pdb
