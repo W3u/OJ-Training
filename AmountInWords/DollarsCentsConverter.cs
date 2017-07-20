@@ -52,7 +52,10 @@ namespace AmountInWords
 			_numberDictionary.Add(90, "ninety");
 		}
 
-
+		/// <summary>
+		/// check input
+		/// </summary>
+		/// <param name="input"></param>
 		public void Check(string input)
 		{
 			decimal amount;
@@ -82,6 +85,11 @@ namespace AmountInWords
 			}
 		}
 
+		/// <summary>
+		/// amount in words
+		/// </summary>
+		/// <param name="input"></param>
+		/// <returns></returns>
 		public string ToWords(string input)
 		{
 			string strDollars = string.Empty;
@@ -199,7 +207,6 @@ namespace AmountInWords
 
 			return sbOutout.ToString();
 		}
-
 
 		private string GetUnit(int length)
 		{
